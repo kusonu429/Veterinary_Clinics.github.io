@@ -1,0 +1,822 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;  
+    /* border:1px solid #000;  */
+}
+
+html{
+    font-size: 62.5%;
+    /* font-size: 10px; */
+}
+
+
+
+/* color var  */
+
+:root{
+--primary-color:#daac00;
+--secondary-color:#fcc302;
+--skyblue-color:#00bec9;
+--dark-color:#313243;
+--light-color:#fff;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section{
+    width: 100%;
+    padding:5% 0;
+}
+
+.container{ 
+    max-width: 1160px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.health-icon{
+    width: unset;
+}
+
+h1{
+   font-size: 6.6rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 7.5rem;
+}
+
+
+h4{
+    font-size:3.7rem;
+}
+
+h5{
+    font-size: 2.9rem;
+}
+
+h6{
+    font-size: 1.6rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.top-para{
+    font-size: 2.9rem;}
+
+
+.btn {
+        font-size: 2.1rem;
+        color: var(--light-color);
+        border: 2px solid var(--light-color);
+        padding: 15px;
+        border-radius: 7px;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+    }
+
+.headings {
+    text-align: center;
+    width: 100%;
+    color: var(--light-color);
+}
+.headings h3{
+text-transform: capitalize;  
+}
+
+.headings p{
+ font-size: 3.3rem; 
+ width: 100%;
+ max-width: 700px; 
+ margin:0 auto;
+ padding: 25px 0 50px 0;
+ 
+}
+
+/* ========== header starts here  ========== */
+
+
+header{
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    width: 100%;
+    padding: 25px 0;
+}
+
+.navbar .logo{
+ width: 20%; 
+}
+
+.navbar .logo a  .logo-img{
+    width: 100%;
+    max-width: 214px;
+}
+
+.navbar  .menu{
+    width: 70%;   
+}
+
+.navbar  .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar  .menu ul li a{
+    text-transform: capitalize;
+    font-size: 2.9rem;
+    color: var(--light-color);
+}
+
+.navbar .search-btn {
+  /* width: 20%; */
+  position: relative;
+}
+
+.navbar .search-btn input{
+    border: 0;
+    background-color: var(--secondary-color);
+    padding: 15px 5px;
+    outline: none;
+    color: var(--light-color);
+}
+
+.navbar .search-btn input::focus{
+    outline: none;
+}
+
+.navbar .search-btn input::placeholder{
+    color: var(--light-color);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.navbar .search-btn .glyph-icon{
+    background-color: var(--skyblue-color);
+    color: var(--light-color);
+    border: 0;
+    padding: 15px 5px;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.humburger span {
+    outline: 2px solid #fff;
+    padding: 10px 6px;
+    display: inline-block;
+}
+
+.humburger span li{
+    width: 25px;
+    height: 2px;
+    margin-bottom:5px;
+    background-color: #fff;
+    
+}
+
+.humburger span li:last-child{
+    margin-bottom: 0;
+}
+
+.humburger{
+    display: none;
+}
+
+
+/* ========== banners starts here  ==========  */
+.banner  {
+    background-color: var(--secondary-color);
+}
+
+
+.banner .banner-section{
+    align-items: unset; 
+}
+
+.banner .banner-section .text-box {
+  width: 55%; 
+}
+
+
+.banner .banner-section .text-box .top-headings{
+    padding-top: 10rem;
+    color: var(--light-color);
+}
+
+
+.banner .banner-section .text-box  .top-para{
+    font-size: 2.9rem;
+    padding: 4rem 0; 
+    color: var(--light-color);
+}
+
+.banner .banner-section .text-box .contact-service-btns .btn {
+    font-size: 2.1rem;
+    color: var(--light-color);
+    border: 2px solid var(--light-color);
+    padding: 15px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.banner .banner-section .text-box .contact-service-btns .btn:hover{
+    background-color: var(--skyblue-color);
+    border: 2px solid var(--skyblue-color);
+}
+
+.banner .banner-section .text-box .contact-service-btns .active-btn{
+    background-color: var(--skyblue-color);
+    border: 2px solid var(--skyblue-color);
+}
+
+.banner .banner-section .text-box .contact-service-btns .active-btn:hover{
+  background: transparent;
+  border: 2px solid var(--light-color);
+}
+
+.banner .banner-section .text-box .contact-service-btns{
+    margin-top: 1.8rem;
+}
+
+.banner .banner-section .text-box .contact-service-btns .our-btns{
+    margin-left:30px;
+}
+
+.banner .banner-section .img-box{
+ width: 40%;
+ display: flex;
+ justify-content: end;
+
+}
+
+.banner .banner-section .img-box .img-1{
+    width: 100%;
+    max-width:400px;
+}
+
+/* ========== banners ends here  ==========  */
+
+
+/* ========== service-section starts here  ==========  */
+
+
+
+.service .service-section .text-box .top-para{
+    margin: 4rem 0;
+}
+
+.our_service-btn {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color); 
+    margin-top: 1.8rem;
+}
+    
+.service .service-section .img-box{   
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.service .service-section .img-box::before{
+    position: absolute;
+    content: ""; 
+    width: 90%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    
+}
+
+.service .service-section .img-box::after {
+    content: "";
+    position: absolute;
+    left: 10px; 
+    bottom: -35px;
+    width: 45%;
+    height: 45%;
+    background-color: var(--secondary-color);
+    z-index: -99;
+} 
+
+.service .service-section .img-box .img-1{
+    width: 90%;    
+}
+
+
+.service .service-section .service-box{
+    width: 48.5%;
+}
+
+
+/* ========== service-section  ends here  ==========  */
+
+
+/* ========== health-care-section starts here  ==========   */
+
+.health-care {
+    background-color: var(--secondary-color);
+}
+
+
+.health-care .health-care-section .healthcare_box{
+    width: 31%;
+    text-align: center;
+}
+
+.health-care .health-care-section .healthcare_box h4{
+    color: var(--light-color);
+    padding: 2rem 0;
+}
+
+.health-care .health-care-section .healthcare_box p{
+    font-size: 2.5rem;
+    color: var(--light-color); 
+}
+
+
+.health-care .health-care-section .healthcare_box .docs-img {
+overflow: hidden; 
+}
+
+.health-care .health-care-section .healthcare_box .docs-img img{
+transition: 1s;
+}
+
+
+.health-care .health-care-section .healthcare_box .docs-img img:hover {
+    transform: scale(1.2);
+
+}
+
+
+/* .health-care .health-care-section .healthcare_box img{
+    width: 100%;
+} */
+
+/* ========== health-care-section ends here  ==========  */
+
+
+/* ========== animal-lover-sections starts here  ==========  */
+
+.left-img-box  { 
+    display: flex;
+    justify-content: start !important;
+    position: relative;
+} 
+
+.service .service-section .left-img-box::after {
+    content: "";
+    position: absolute; 
+    left: 55%;
+    bottom: -10%;
+    width: 45%;
+    height: 45%;
+    background-color: var(--secondary-color);
+    z-index: -99;
+}
+
+.right-text-box { 
+    text-align: right;
+}
+
+
+
+/* ========== animal-lover-sections ends here  ==========  */
+
+
+/* ========== dog-buy-section starts here  ==========  */
+
+
+.buy-btns {
+    border-radius: 30px;
+    width: 100%;
+    display: inline-block; 
+    max-width: 200px;
+    font-size: 2.5rem;
+    background: var(--skyblue-color);
+    border: 2px solid var(--skyblue-color);
+}
+
+.buy-btns:hover{
+    background: transparent;
+    border: 2px solid var(--light-color);
+}
+
+/* ========== dog-buy-section ends here  ==========   */
+
+
+/* ========== Vetcare-section starts here  ==========   */
+
+.Vetcare {
+    background: transparent;
+}
+
+.Vetcare .headings h3{
+    color: var(--dark-color);
+}
+
+.Vetcare .headings  p{
+    color: var(--dark-color);
+}
+
+
+.Vetcare-section .healthcare_box h5{
+    color: var(--dark-color);
+    margin: 15px 0;
+}
+
+
+.Vetcare-section .healthcare_box  p{
+    color: var(--dark-color) !important; 
+}
+
+/* ========== Vetcare-section ends here  ==========   */
+
+
+/* ========== icons-section starts here  ==========   */
+
+.icons {
+    background-image: url('../images/work-bb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height:350px;   
+    position: relative; 
+}
+
+.icons::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    
+}
+
+.icons .icons-section {
+    display: flex;
+    align-items: center;
+}
+
+.icons .icons-section   .icon_box{ 
+    z-index: 99; 
+    width: 31% !important;
+    text-align: center;
+}
+
+
+
+.icons .icons-section   .healthcare_box h5{
+    color: var(--light-color);
+    padding: 25px 0;
+}
+
+
+
+
+/* ========== icons-section ends here  ==========  */
+
+
+/* ========== recent-post-section starts here  ==========  */
+
+.recent-post {
+    background: transparent;
+}
+
+
+.recent-post .recent-post-section .headings h3 ,
+.recent-post .recent-post-section .headings p
+{
+    color: var(--dark-color);
+}
+  .recent-post .recent-post-section  .healthcare_box{
+    text-align: left;    
+    box-shadow:0 0 45px rgb(0 0 0 / 15%); 
+    /* border: 1px solid var(--dark-color); */
+  }
+
+.recent-post .recent-post-section  .healthcare_box:hover img{
+   transform: scale(1.2);  
+  }
+
+  .recent-post .recent-post-section  .healthcare_box .docs-img {
+    overflow: hidden;
+  }
+
+  .recent-post .recent-post-section  .healthcare_box .docs-img img{
+    width: 100%;
+    transition: 1s;
+  }
+
+
+
+  .recent-post .recent-post-section  .healthcare_box .text-box-sec{
+    padding: 25px; 
+  }
+
+  .recent-post .recent-post-section  .healthcare_box h5{
+    font-size: 2.5rem;
+    margin: 15px 0;
+  }
+  .recent-post .recent-post-section  .healthcare_box h6{
+    color: var(--skyblue-color);
+    margin: 15px 0;
+  }
+
+
+  .recent-post .recent-post-section  .healthcare_box  p{
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    margin: 15px 0;
+
+  }
+
+  .recent-post .recent-post-section  .healthcare_box a{
+    font-size: 2.1rem;
+    color: var(--skyblue-color);
+    text-transform: capitalize;
+  }
+
+/* ========== recent-post-section ends here  ==========  */
+
+
+
+/* ========== footer-section starts here  ==========  */
+
+.mein-footer{
+    background-color:#343434;
+}
+
+.mein-footer .footer-section {
+     align-items: unset;
+    /* border: 1px solid var(--skyblue-color);  */
+    
+}
+
+.mein-footer .footer-section .footer-box-1 {
+    width: 28.5%; 
+}
+
+.mein-footer .footer-section .footer-box-1 h4{
+    color: var(--light-color);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.mein-footer .footer-section .footer-box-1 ul li{
+    line-height: 3rem;
+}
+
+.mein-footer .footer-section .footer-box-1 ul li a{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+   
+}
+
+.mein-footer .footer-section .footer-box-1 ul li a:hover{
+ /* transform:scale(2rem);  */
+ font-size: 3rem; 
+ color: var(--skyblue-color);
+}
+
+.mein-footer .footer-section .footer-box-2 {
+width: 38.5%;
+text-align: right;
+}
+
+.mein-footer .footer-section .footer-box-2 h4{
+    color: var(--light-color);
+    text-transform: capitalize;
+    padding-bottom: 0.5rem; 
+}
+
+
+.mein-footer .footer-section .footer-box-2 p{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    padding-bottom: 3rem;
+} 
+
+.mein-footer .footer-section .footer-box-2 form {
+    position: relative;    
+    width: 100%; 
+}
+
+.mein-footer .footer-section .footer-box-2 form input{
+    max-width: 400px; 
+    width: 100%;
+    transition: all 0.3s ease-in;   
+}
+
+.mein-footer .footer-section .footer-box-2 form input::placeholder{
+    color: var(--light-color);
+}
+
+.mein-footer .footer-section .footer-box-2 form input:hover{
+ max-width: 500px;
+}
+
+
+.mein-footer .footer-section .footer-box-2 form input ,
+.mein-footer .footer-section .footer-box-2 form button
+{
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+    padding: 3rem; 
+
+}
+
+.mein-footer .footer-section .footer-box-2 form button{
+ background-color: var(--skyblue-color);
+ color: var(--light-color);
+ max-width: 145px;
+ position: absolute;
+ right: 0;
+ font-size: 1.5rem;
+ text-transform: capitalize;
+}
+
+
+/* ========== footer-section ends here  ==========  */
+
+
+@media (max-width:991px) { 
+
+
+    html{
+        font-size:8px; 
+    }
+
+   h1{
+    font-size: 5.5rem;
+   }
+
+    h4{
+        font-size: 3.2rem;
+    }
+   
+    .navbar  .menu {
+        width: 0%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    header{
+        position: relative;
+        z-index: 99;
+    }
+
+
+    .humburger{
+        display: block;
+    }
+
+
+   
+
+    .navbar {
+        width: 90%;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+
+    .navbar  .menu ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+     .navbar  .menu .mein-menu{
+        position: absolute;
+        left: 0;
+        top: -400px;
+        background-color: var(--primary-color);
+        transition: all 0.5s linear;
+        z-index: -99;
+        width: 100%;
+    }
+  
+
+    .navbar  .menu ul li{
+        line-height: 50px;
+    }
+
+    .header-section .navbar  .menu .active{ 
+        top:85px;  
+     }
+
+
+
+    
+}
+
+@media (max-width:767px) {
+
+    .banner .banner-section{
+        text-align: center;
+    }
+
+    .banner .banner-section .banners-box {
+        width:100%;
+    }
+
+
+    .banner .banner-section .img-box {       
+        justify-content:center;
+        margin-top: 50px;
+    }
+
+
+    .service .service-section .service-box {
+        width:100%;
+    }
+
+    .service .service-section .img-box {
+        width: 70%; 
+        margin: 50px 0;
+    }
+
+
+    .health-care .health-care-section .healthcare_box {
+        width: 48%;
+        margin-bottom: 25px; 
+        text-align: center;
+    }
+
+    .mein-footer .footer-section .footer-box-1 {
+        width: 48.5%; 
+    }
+
+    .mein-footer .footer-section .footer-box-2 {
+        width: 100%;
+        text-align: left; 
+        margin-top: 50px;
+    }
+
+    .mein-footer .footer-section .footer-box-2 form {   
+        max-width: 400px;       
+    }
+
+}
+
+
+@media (max-width:575px) { 
+    .health-care .health-care-section .healthcare_box {
+        width: 70%;
+        margin: 25px auto;       
+    }
+
+    .icons {      
+        height: unset;        
+    }
+
+    .icons .icons-section   .icon_box {
+        z-index: 99;
+        width: 60% !important;     
+    }
+
+    .mein-footer .footer-section .footer-box-1 {
+        width: 100%;
+    }
+
+   
+}
